@@ -1,0 +1,35 @@
+{
+  "name": "whale-markdown",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "package-win": "electron-packager . MyApp --platform=win32 --arch=x64 --out=dist/",
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "test.app",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "asar": "^3.2.0"
+  }
+}

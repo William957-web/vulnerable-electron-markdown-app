@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whale Markdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Whale Markdown</h1>
+        <div class="buttons">
+            <input type="file" id="fileInput" accept=".md">
+            <button onclick="downloadMarkdown()">Download Markdown</button>
+        </div>
+        <textarea id="markdownEditor" placeholder="Type your Markdown here..."></textarea>
+        <div id="markdownPreview"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
